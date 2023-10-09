@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 100vw;
+    height: auto;
+
+}
+
+.intro {
+    padding: 10% 4% 25% 4%;
+}
+
+.workNode {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.workContent {
+    padding: 10px;
+}
+
+img, video, iframe, .gallery {
+    width: 100%;
+    height: auto;
+    padding-left:0 !important; 
+    padding-right:0 !important;
+} 
