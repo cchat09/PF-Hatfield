@@ -13,8 +13,16 @@ header, h1 {
     font-family: 'Questrial', sans-serif;
 }
 
+h1 {
+    font-size: 2em;
+    @media (min-width: 768px) {
+        font-size: xxx-large;
+    }
+}
+
 h3, .intro h1 {
     font-family: 'Montserrat';
+    font-size: 1em
 }
 
 p {
@@ -22,9 +30,10 @@ p {
     font-size: 1em;
 }
 
-.workNode h1 {
-    font-size: 2em;
-    @media (min-width: 768px) {
-        font-size: xxx-large;
+@media (min-width: 768px) {
+    .aboutMe__main {
+        p {
+            font-size: small;
+        }
     }
 }

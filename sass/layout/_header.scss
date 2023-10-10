@@ -11,6 +11,10 @@ header {
        :hover {
         font-weight: bolder;
        }
+       
+    }
+    .currentPage {
+       text-decoration: underline;
     }
 }
 
@@ -32,6 +36,7 @@ z-index: 1;
     justify-content: space-around;
     font-size: 1.2em;
     z-index: 2;
+
 }
 
 .header__logo {

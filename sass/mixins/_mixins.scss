@@ -19,10 +19,11 @@
 }
 
  @mixin desktop2col {
-    @include desktop1col;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    width: 80vw;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 @mixin gallery-2col-2row {

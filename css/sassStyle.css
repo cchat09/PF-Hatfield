@@ -3,6 +3,10 @@
   color: black;
 }
 
+main :any-link {
+  text-decoration: underline;
+}
+
 .internalNav {
   position: fixed;
   right: 2%;
@@ -189,6 +193,9 @@ header :any-link {
 header :any-link :hover {
   font-weight: bolder;
 }
+header .currentPage {
+  text-decoration: underline;
+}
 
 .headerDesktopContainer {
   display: flex;
@@ -239,6 +246,20 @@ header :any-link :hover {
   .workNode {
     margin-top: 20vh;
   }
+  .aboutMe__main {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .aboutMe__main .column {
+    width: 45%;
+    padding-top: 25vh;
+  }
+  .aboutMe__main h1 {
+    margin-top: 10vh;
+  }
 }
 @media (max-width: 768px) {
   .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #gallerySeat, #galleryMyself {
@@ -257,8 +278,18 @@ header, h1 {
   font-family: "Questrial", sans-serif;
 }
 
+h1 {
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: xxx-large;
+  }
+}
+
 h3, .intro h1 {
   font-family: "Montserrat";
+  font-size: 1em;
 }
 
 p {
@@ -266,12 +297,9 @@ p {
   font-size: 1em;
 }
 
-.workNode h1 {
-  font-size: 2em;
-}
 @media (min-width: 768px) {
-  .workNode h1 {
-    font-size: xxx-large;
+  .aboutMe__main p {
+    font-size: small;
   }
 }
 
