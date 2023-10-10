@@ -8,6 +8,85 @@
   right: 2%;
   top: 40%;
 }
+.internalNav :any-link:hover {
+  font-weight: bold;
+}
+
+#galleryIe, #gallerySeat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+#gallerySeat {
+  grid-template-areas: "seatPic1 seatPic1" "seatPic2 seatPic3";
+}
+
+#seatPic1 {
+  grid-area: seatPic1;
+}
+
+#seatPic2 {
+  grid-area: seatPic2;
+}
+
+#seatPic3 {
+  grid-area: seatPic3;
+}
+
+#galleryOhMyDog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  grid-template-areas: "ohMyDogPic1 ohMyDogPic1" "ohMyDogPic2 ohMyDogPic3";
+}
+
+#ohMyDogPic1 {
+  grid-area: ohMyDogPic1;
+  width: 70%;
+  margin: auto;
+}
+
+#ohMyDogPic2 {
+  grid-area: ohMyDogPic2;
+}
+
+#ohMyDogPic3 {
+  grid-area: ohMyDogPic3;
+}
+
+#galleryMyself {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, fr);
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  grid-template-areas: "myself1 myself1 myself1 myself2 myself2 myself2" ". myself3 myself3 myself3 myself3 ." "myself4 myself4 myself4 myself5 myself5 myself5";
+}
+
+#myself1 {
+  grid-area: myself1;
+}
+
+#myself2 {
+  grid-area: myself2;
+}
+
+#myself3 {
+  grid-area: myself3;
+}
+
+#myself4 {
+  grid-area: myself4;
+}
+
+#myself5 {
+  grid-area: myself5;
+}
 
 .spacer-1 {
   width: 100%;
@@ -151,15 +230,18 @@ header :any-link :hover {
     display: none;
   }
   .work__main {
-    width: 60vw;
+    width: 45vw;
     margin: auto;
   }
   .gallery {
     gap: 20px;
   }
+  .workNode {
+    margin-top: 20vh;
+  }
 }
 @media (max-width: 768px) {
-  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
+  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #gallerySeat, #galleryMyself {
     display: none;
   }
 }

@@ -1,5 +1,8 @@
 .internalNav {
     position: fixed;
     right: 2%;
-    top: 40%
+    top: 40%;
+    :any-link:hover {
+        font-weight: bold;
+    }
 }
