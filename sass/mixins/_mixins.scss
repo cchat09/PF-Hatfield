@@ -1,0 +1,25 @@
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button {
+    padding: 10px;
+    color: $darkGray;
+    margin: 10px;
+}
+
+
+@desktop1col {
+    @media (min-width: 768px) {
+        .mainContainer {
+            width: 70%
+        }
+    }
+}
+
+@desktop2col {
+    
+}
