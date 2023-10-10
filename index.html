@@ -13,8 +13,8 @@
 </head>
 <body>
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!--Bootstrap component starts here, navbar for mobile-->
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html">Christopher Hatfield</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,10 +41,7 @@
               </div>
             </div>
           </nav>        
-
-
-
-
+        <!--Bootstrap component ends here-->
         <div class="headerDesktopContainer">
             <div class="header__logo">
                 <a href="./index.html">Christopher Hatfield</a>
@@ -74,15 +71,22 @@
 
     <main class="work__main">
         <div class="mainContainer">
+            
+            <div class="spacer-5"></div>
+            
             <section class="intro">
                 <h1>I'm Chris, an international copywriter and creative.
 
 Start scrolling to see my work.</h1>
             </section>
-
+            
+            <div class="spacer-4"></div>
+            
             <section class="workNode" id="maybach">
                 <h1 class="workContent">MERCEDES-MAYBACH</h1>
-                <iframe width="100%" height="478" src="https://www.youtube.com/embed/uuIo991ioHU" title="Mercedes-Maybach | The Legend continues" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="workContent"></iframe>
+                <video controls="controls" class="workContent">
+                    <source src="./assets/videos/Maybach.mp4" type="video/mp4" />
+                </video> 
                 <p class="workContent">To celebrate the new Mercedes-Maybach S-Class, and 100 years of Maybach excellence, we needed a style and script that would speak to an audience across multiple cultures. A universal message for a universal icon.</p>
             </section>
 
@@ -196,9 +200,6 @@ Mateo, our collaborating artist, created an original piece on a custom built wal
                       <div class="carousel-item">
                         <img src="./assets/images/work/myself/myself2.jpg" class="d-block w-100" alt="Orange poster that says - Because 'She has a flower in her ass' doesn't sound particularly lucky. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongisde the phrase and contact information below.">
                       </div>
-                      <div class="carousel-item myselfTweet">
-                        <img src="./assets/images/work/myself/myself3.png" class="d-block w-100" alt="Tweet tagging ad agency promoting freelance services. Attached is a blue banner that says - Because 'I'm sitting in the milk' sounds fucking gross. - with a Spanish flag alongside the phrase.">
-                      </div>
                       <div class="carousel-item">
                         <img src="./assets/images/work/myself/myself4.png" class="d-block w-100" alt="Purple banner that says - Because soming saying you're 'Always really horny' will (probably) hurt your game. has a flower in her ass' doesn't sound particularly lucky. Adaptation/translation. Available for Freelance. - With a Spanish flag alongisde the phrase.">
                       </div>
@@ -216,10 +217,6 @@ Mateo, our collaborating artist, created an original piece on a custom built wal
                     </button>
                   </div>
                   <!--Booststrap component ends here-->
-
-
-
-
                 <div class="workContent gallery" id="galleryMyself">
                     <img id="myself1" src="./assets/images/work/myself/myself1.jpg" alt="Yellow poster that says - Because 'Don't touch my balls' will get you sent to HR. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongside the phrase and contact information below.">
                     <img id="myself2" src="./assets/images/work/myself/myself2.jpg" alt="Orange poster that says - Because 'She has a flower in her ass' doesn't sound particularly lucky. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongisde the phrase and contact information below.">

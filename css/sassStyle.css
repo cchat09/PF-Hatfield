@@ -3,8 +3,63 @@
   color: black;
 }
 
+.internalNav {
+  position: fixed;
+  right: 2%;
+}
+
 .gallery .active {
   top: 30px;
+}
+
+.spacer-1 {
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.spacer-2 {
+  width: 100%;
+  margin-bottom: 20%;
+}
+
+.spacer-3 {
+  width: 100%;
+  margin-bottom: 30%;
+}
+
+.spacer-4 {
+  width: 100%;
+  margin-bottom: 40%;
+}
+
+.spacer-5 {
+  width: 100%;
+  margin-bottom: 50%;
+}
+
+.spacer-6 {
+  width: 100%;
+  margin-bottom: 60%;
+}
+
+.spacer-7 {
+  width: 100%;
+  margin-bottom: 70%;
+}
+
+.spacer-8 {
+  width: 100%;
+  margin-bottom: 80%;
+}
+
+.spacer-9 {
+  width: 100%;
+  margin-bottom: 90%;
+}
+
+.spacer-10 {
+  width: 100%;
+  margin-bottom: 100%;
 }
 
 * {
@@ -19,7 +74,7 @@ main {
 }
 
 .intro {
-  padding: 10% 4% 25% 4%;
+  padding: 10% 4% 10% 4%;
 }
 
 .workNode {
@@ -41,6 +96,12 @@ img, video, iframe, .gallery {
 
 .gallery img, video {
   margin-bottom: 5px;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,6 @@
+@for $i from 1 through 10 {
+    .spacer-#{$i} {
+        width: 100%;
+        margin-bottom: 10% * $i;
+    }
+}
