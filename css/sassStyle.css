@@ -3,6 +3,10 @@
   color: black;
 }
 
+.gallery .active {
+  top: 30px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -35,7 +39,14 @@ img, video, iframe, .gallery {
   padding-right: 0 !important;
 }
 
+.gallery img, video {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 768px) {
+  .navbar, .carousel {
+    display: none;
+  }
   .work__main {
     width: 60vw;
     margin: auto;
@@ -45,7 +56,7 @@ img, video, iframe, .gallery {
   }
 }
 @media (max-width: 768px) {
-  .internalNav {
+  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
     display: none;
   }
 }

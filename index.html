@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet">
@@ -12,18 +13,52 @@
 </head>
 <body>
     <header>
-        <div class="header__logo">
-            <a href="./index.html">Christopher Hatfield</a>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">Christopher Hatfield</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/aboutMe.html">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/writing.html">Writing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/flashFiction.html">Flash fiction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/flashFiction.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>        
+
+
+
+
+        <div class="headerDesktopContainer">
+            <div class="header__logo">
+                <a href="./index.html">Christopher Hatfield</a>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <a href="./index.html"><li>Work</li></a>
+                    <a href="./pages/aboutMe.html"><li>About me</li></a>
+                    <a href="./pages/writing.html"><li>Writing</li></a>
+                    <a href="./pages/flashFiction.html"><li>Flash fiction</li></a>
+                    <a href="./pages/contact.html"><li>Contact</li></a>
+                </ul>
+            </nav>
         </div>
-        <nav class="header__nav">
-            <ul>
-                <a href="./index.html"><li>Work</li></a>
-                <a href="./pages/aboutMe.html"><li>About me</li></a>
-                <a href="./pages/writing.html"><li>Writing</li></a>
-                <a href="./pages/flashFiction.html"><li>Flash fiction</li></a>
-                <a href="./pages/contact.html"><li>Contact</li></a>
-            </ul>
-        </nav>
     </header>
 
     <nav class="work__nav internalNav">
@@ -32,7 +67,7 @@
            <a href="#seat"><li>SEAT</li></a>
            <a href="#ie"><li>IE</li></a>
            <a href="#ohMyDog"><li>OH MY DOG!</li></a>
-           <a href=""><li>MYSELF</li></a>
+           <a href="#myself"><li>MYSELF</li></a>
 
         </ul>
     </nav>
@@ -71,6 +106,35 @@ Mateo, our collaborating artist, created an original piece on a custom built wal
 
             <section class="workNode" id="ie">
                 <h1 class="workContent">IE ALUMNI</h1>
+                <!--Bootstrap component starts here - carousel for mobile view-->
+                <div id="carouselIe" class="carousel carousel-dark slide workContent">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <video id="ieVid2" class="d-block w-100" autoplay loop muted>
+                            <source src="./assets/videos/ie2_pizza.mp4" type="video/mp4">
+                        </video> 
+                      </div>
+                      <div class="carousel-item">
+                        <video id="ieVid1" class="d-block w-100" autoplay loop muted>
+                            <source src="./assets/videos/ie1_glasses.mp4" type="video/mp4">
+                        </video> 
+                      </div>
+                      <div class="carousel-item">
+                        <video id="ieVid3" class="d-block w-100" autoplay loop muted>
+                            <source src="./assets/videos/ie3_travel.mp4" type="video/mp4">
+                        </video> 
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIe" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIe" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!--Bootstrap component ends here-->
                 <div class="workContent gallery" id="galleryIe"> 
                     <video controls="controls" id="ieVid1">
                         <source src="./assets/videos/ie1_glasses.mp4" type="video/mp4">
@@ -90,6 +154,29 @@ Mateo, our collaborating artist, created an original piece on a custom built wal
 
             <section class="workNode" id="ohMyDog">
                 <h1 class="workContent">OH MY DOG!</h1>
+                <!--Bootstrap component starts here - carousel for mobile view-->
+                <div id="carouselOhMyDog" class="carousel carousel-dark slide workContent">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/1696847585913-MGHCKTU09DALILOKHXCJ/zrxm5q3zdxsicgujxpq5tdhe9q85.jpeg?format=750w" class="d-block w-100" alt="Middle-aged man with long hair, sticking his head out of the car in the wind with his tongue out like a dog">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/1696847594700-UVWGKTFI1KCHQZSA8FWW/amjs3qh680drtmu8va3ma8vbx012.jpeg?format=750w" class="d-block w-100" alt="Kid excitingly licking their plate sloppily, like a dog would">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/1696847594663-LUKSXL1NY829MQWF6WCU/9fd02wqdz0xolci34bkqfdqrfga2.jpeg?format=750w" class="d-block w-100" alt="Young happy woman with long, wet, blonde hair, shaking it wildly to dry like a dog does">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOhMyDog" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOhMyDog" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+                <!--Bootstrap component ends here-->
                 <div class="workContent gallery" id="galleryOhMyDog">
                     <img src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/1696847585913-MGHCKTU09DALILOKHXCJ/zrxm5q3zdxsicgujxpq5tdhe9q85.jpeg?format=750w" alt="Middle-aged man with long hair, sticking his head out of the car in the wind with his tongue out like a dog">
                     <img src="https://images.squarespace-cdn.com/content/v1/5327986de4b0c5c3326c5737/1696847594700-UVWGKTFI1KCHQZSA8FWW/amjs3qh680drtmu8va3ma8vbx012.jpeg?format=750w" alt="Kid excitingly licking their plate sloppily, like a dog would">
@@ -99,13 +186,46 @@ Mateo, our collaborating artist, created an original piece on a custom built wal
             </section>
 
             <section class="workNode" id="myself">
-                <h1>MYSELF</h1>
+                <h1 class="workContent">MYSELF</h1>
+                <!--Bootstrap component starts here - carousel for mobile view-->
+                <div id="carouselMyself" class="carousel carousel-dark slide workContent">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/images/work/myself/myself1.jpg" class="d-block w-100" alt="Yellow poster that says - Because 'Don't touch my balls' will get you sent to HR. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongside the phrase and contact information below.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/work/myself/myself2.jpg" class="d-block w-100" alt="Orange poster that says - Because 'She has a flower in her ass' doesn't sound particularly lucky. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongisde the phrase and contact information below.">
+                      </div>
+                      <div class="carousel-item myselfTweet">
+                        <img src="./assets/images/work/myself/myself3.png" class="d-block w-100" alt="Tweet tagging ad agency promoting freelance services. Attached is a blue banner that says - Because 'I'm sitting in the milk' sounds fucking gross. - with a Spanish flag alongside the phrase.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/work/myself/myself4.png" class="d-block w-100" alt="Purple banner that says - Because soming saying you're 'Always really horny' will (probably) hurt your game. has a flower in her ass' doesn't sound particularly lucky. Adaptation/translation. Available for Freelance. - With a Spanish flag alongisde the phrase.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/images/work/myself/myself5.png" class="d-block w-100" alt="Green banner that says - Because 'Giving a blowjob to a rooster' is nothing to joke about. Adaptation/translation. Available for Freelance. - With a Colombian flag alongisde the phrase.">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMyself" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMyself" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                  <!--Booststrap component ends here-->
+
+
+
+
                 <div class="workContent gallery" id="galleryMyself">
-                    <img id="myself1" src="./assets/images/work/myself/myself1.jpg" alt="yellow poster with funny literal translation of a Spanish saying promoting copywriting services">
-                    <img id="myself2" src="./assets/images/work/myself/myself2.jpg" alt="red poster with funny literal translation of a Spanish saying promoting copywriting services">
-                    <img id="myself3" src="./assets/images/work/myself/myself3.png" alt="blue tweet with funny literal translation of a Spanish saying promoting copywriting services">
-                    <img id="myself4" src="./assets/images/work/myself/myself4.png" alt="green poster with funny literal translation of a Spanish saying promoting copywriting services">
-                    <img id="myself5" src="./assets/images/work/myself/myself5.png" alt="purple poster with funny literal translation of a Spanish saying promoting copywriting services ">
+                    <img id="myself1" src="./assets/images/work/myself/myself1.jpg" alt="Yellow poster that says - Because 'Don't touch my balls' will get you sent to HR. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongside the phrase and contact information below.">
+                    <img id="myself2" src="./assets/images/work/myself/myself2.jpg" alt="Orange poster that says - Because 'She has a flower in her ass' doesn't sound particularly lucky. Get a native copywriter who knows what your saying. Original copy / adaptation & translation. Available for Freelance. - With a Spanish flag alongisde the phrase and contact information below.">
+                    <img id="myself3" src="./assets/images/work/myself/myself3.png" alt="Tweet tagging ad agency promoting freelance services. Attached is a blue banner that says - Because 'I'm sitting in the milk' sounds fucking gross. - with a Spanish flag alongside the phrase.">
+                    <img id="myself4" src="./assets/images/work/myself/myself4.png" alt="Purple banner that says - Because soming saying you're 'Always really horny' will (probably) hurt your game. has a flower in her ass' doesn't sound particularly lucky. Adaptation/translation. Available for Freelance. - With a Spanish flag alongisde the phrase.">
+                    <img id="myself5" src="./assets/images/work/myself/myself5.png" alt="Green banner that says - Because 'Giving a blowjob to a rooster' is nothing to joke about. Adaptation/translation. Available for Freelance. - With a Colombian flag alongisde the phrase.">
                 </div>
                 <p class="workContent">One thing Spain is short on: native English copywriters. And the ones that are here often don't speak much Spanish; <i>no me toques las pelotas</i> will leave them scratching their heads.
     
@@ -119,5 +239,6 @@ I sent flyers and tweets to agencies in Spain and drummed up some business. Eate
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

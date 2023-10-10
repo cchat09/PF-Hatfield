@@ -1,5 +1,8 @@
 @media (min-width: 768px) {
     
+    .navbar, .carousel {
+        display: none;
+    }
     .work__main {
         @include desktop1col
     }
@@ -8,13 +11,15 @@
         gap: 20px;
     }
 
-    
+   
 
 }
 
 
 @media (max-width: 768px) {
-    .internalNav {
+    .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
         display: none;
     }
+
+   
 }
