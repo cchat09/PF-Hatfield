@@ -1,5 +1,46 @@
 header {
     position: fixed;
     width: 100vw;
+    height: auto;
+    background-color: white;
     top: 0;
+    z-index: 1;
+    :any-link {
+       font-family: Arial, Helvetica, sans-serif ;
+       color: black;
+       :hover {
+        font-weight: bolder;
+       }
+    }
+}
+
+
+
+.headerDesktopContainer {
+@include flex-row-center;
+width: 100vw;
+margin-top: 2vh;
+margin-bottom: 1.5vh;
+z-index: 1;
+}
+
+.header__nav {
+    @include flex-row-center;
+    list-style: none;
+    width: 50vw;
+    margin-top: 12px;
+    justify-content: space-around;
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+.header__logo {
+    top: 200px;
+    left: 15%;
+   font-weight: bolder;
+    font-size: 1.5em;
+    z-index:2;
+    :hover {
+        font-size: 1.1em;
+    }
 }

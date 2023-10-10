@@ -6,10 +6,7 @@
 .internalNav {
   position: fixed;
   right: 2%;
-}
-
-.gallery .active {
-  top: 30px;
+  top: 40%;
 }
 
 .spacer-1 {
@@ -74,13 +71,13 @@ main {
 }
 
 .intro {
-  padding: 10% 4% 10% 4%;
+  padding: 40vh 4% 30vh 4%;
 }
 
 .workNode {
   width: 100%;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .workContent {
@@ -101,7 +98,52 @@ img, video, iframe, .gallery {
 header {
   position: fixed;
   width: 100vw;
+  height: auto;
+  background-color: white;
   top: 0;
+  z-index: 1;
+}
+header :any-link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+header :any-link :hover {
+  font-weight: bolder;
+}
+
+.headerDesktopContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  margin-top: 2vh;
+  margin-bottom: 1.5vh;
+  z-index: 1;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 50vw;
+  margin-top: 12px;
+  justify-content: space-around;
+  font-size: 1.2em;
+  z-index: 2;
+}
+
+.header__logo {
+  top: 200px;
+  left: 15%;
+  font-weight: bolder;
+  font-size: 1.5em;
+  z-index: 2;
+}
+.header__logo :hover {
+  font-size: 1.1em;
 }
 
 @media (min-width: 768px) {
@@ -144,6 +186,11 @@ p {
 
 .workNode h1 {
   font-size: 2em;
+}
+@media (min-width: 768px) {
+  .workNode h1 {
+    font-size: xxx-large;
+  }
 }
 
 /*# sourceMappingURL=sassStyle.css.map */
