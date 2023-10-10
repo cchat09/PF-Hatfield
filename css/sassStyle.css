@@ -1,11 +1,8 @@
-@desktop1col {
-  @media (min-width: 768px) {
-    .mainContainer {
-      width: 70%;
-    }
-  }
+:any-link {
+  text-decoration: none;
+  color: black;
 }
-@desktop2col {}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,6 +35,20 @@ img, video, iframe, .gallery {
   padding-right: 0 !important;
 }
 
+@media (min-width: 768px) {
+  .work__main {
+    width: 60vw;
+    margin: auto;
+  }
+  .gallery {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .internalNav {
+    display: none;
+  }
+}
 p, h1, h2, h3 {
   white-space: pre-wrap;
 }
@@ -50,7 +61,7 @@ header, h1 {
   font-family: "Questrial", sans-serif;
 }
 
-.intro h1 {
+h3, .intro h1 {
   font-family: "Montserrat";
 }
 

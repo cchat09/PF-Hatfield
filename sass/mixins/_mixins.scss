@@ -12,14 +12,14 @@
 }
 
 
-@desktop1col {
-    @media (min-width: 768px) {
-        .mainContainer {
-            width: 70%
-        }
-    }
+@mixin desktop1col {
+    width: 60vw;
+    margin: auto;
 }
 
-@desktop2col {
-    
+ @mixin desktop2col {
+    @include desktop1col;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
