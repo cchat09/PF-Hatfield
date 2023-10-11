@@ -1,0 +1,44 @@
+#carousel-1 .item {
+    padding:100px 1em;
+ }
+
+ .sixWordStory {
+    margin-bottom: 20vh;
+ }
+
+ .firstStory {
+    margin-top: 45vh;
+ }
+
+ .lastStory {
+    margin-bottom: 50vh;
+ }
+
+ .sixWordBackground {
+    background-color: white;
+    width: 100vw;
+    height: 40vh;
+    position: fixed;
+    z-index: 1;
+ }
+
+.sixWordBackgroundTop {
+    top:0;
+}
+
+.sixWordBackgroundBottom {
+    bottom:0;
+    height: 40vh;
+}
+
+.flashFiction__main {
+    p {
+        position: relative;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 30vh;
+    }
+   
+}

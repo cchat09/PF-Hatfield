@@ -20,7 +20,7 @@
     .navbar, .carousel {
         display: none;
     }
-    .work__main, .aboutMe__main, .contact__main {
+    .work__main, .aboutMe__main, .contact__main, .writing__main {
         @include desktop1col;
     }
 
@@ -29,6 +29,10 @@
     }
 
    .workNode {
+    margin-top: 20vh;
+   }
+
+   .writing__main h1 {
     margin-top: 20vh;
    }
 }

@@ -1,0 +1,23 @@
+article {
+    white-space: pre-wrap; 
+    font-family: 'Times New Roman', Times, serif;
+    background-color: $paper;
+    overflow: scroll;
+    height: 50vh;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10%;
+    @media (min-width:768px) {
+        height: auto;
+        overflow: auto;
+        
+    }
+}
+
+.writing__main {
+    h3 {
+        width: 80%;
+        margin: auto;
+    }
+}
+
