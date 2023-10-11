@@ -7,6 +7,13 @@ main :any-link {
   text-decoration: underline;
 }
 
+.inputButton {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+
 .internalNav {
   position: fixed;
   right: 2%;
@@ -142,6 +149,55 @@ main :any-link {
   margin-bottom: 100%;
 }
 
+form {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer label, .formContainer input, .formContainer textarea {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+.formGroup label {
+  margin-bottom: 12px;
+}
+
+.contact__main input {
+  /* margin: 3% 2% 5% 3%; */
+}
+.contact__main label {
+  margin-right: 2%;
+}
+
+@media (max-width: 768px) {
+  textarea {
+    width: 90%;
+  }
+  label {
+    margin-right: 0;
+  }
+  input {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .desktopRowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -176,6 +232,13 @@ img, video, iframe, .gallery {
 
 .gallery img, video {
   margin-bottom: 5px;
+}
+
+.contact__main .contactIntro {
+  margin: 10vh 2% auto 2%;
+}
+.contact__main .desktopRowContainer {
+  width: auto;
 }
 
 header {
@@ -232,11 +295,23 @@ header .currentPage {
   font-size: 1.1em;
 }
 
+@media (max-width: 768px) {
+  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #gallerySeat, #galleryMyself {
+    display: none;
+  }
+  .aboutMe__main {
+    width: 100vw;
+  }
+  .aboutMe__main img {
+    width: 100vw;
+    height: auto;
+  }
+}
 @media (min-width: 768px) {
   .navbar, .carousel {
     display: none;
   }
-  .work__main {
+  .work__main, .aboutMe__main, .contact__main {
     width: 45vw;
     margin: auto;
   }
@@ -246,24 +321,41 @@ header .currentPage {
   .workNode {
     margin-top: 20vh;
   }
+}
+@media (min-width: 1300px) {
   .aboutMe__main {
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1vw;
+    justify-content: center;
   }
   .aboutMe__main .column {
     width: 45%;
-    padding-top: 25vh;
+    padding-top: 15vh;
   }
   .aboutMe__main h1 {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
-}
-@media (max-width: 768px) {
-  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #gallerySeat, #galleryMyself {
-    display: none;
+  .aboutMe__main img {
+    height: 540px;
+    width: fit-content;
+  }
+  .contact__main {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+  }
+  .contact__main .column {
+    width: 45%;
+    padding-top: 15vh;
+  }
+  .contact__main h1, .contact__main form {
+    margin-top: 5vh;
   }
 }
 p, h1, h2, h3 {
@@ -283,13 +375,8 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: xxx-large;
+    font-size: x-large;
   }
-}
-
-h3, .intro h1 {
-  font-family: "Montserrat";
-  font-size: 1em;
 }
 
 p {
@@ -298,9 +385,14 @@ p {
 }
 
 @media (min-width: 768px) {
-  .aboutMe__main p {
-    font-size: small;
+  h1 {
+    font-size: xxx-large;
   }
+}
+
+h3, .intro h1 {
+  font-family: "Montserrat";
+  font-size: x-large;
 }
 
 /*# sourceMappingURL=sassStyle.css.map */

@@ -1,9 +1,26 @@
+@media (max-width: 768px) {
+    .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
+        display: none;
+    }
+
+    .aboutMe__main {
+        width: 100vw;
+    }
+    .aboutMe__main img {
+        width: 100vw;
+        height: auto;
+    }
+
+   
+}
+
+
 @media (min-width: 768px) {
     
     .navbar, .carousel {
         display: none;
     }
-    .work__main {
+    .work__main, .aboutMe__main, .contact__main {
         @include desktop1col;
     }
 
@@ -14,25 +31,38 @@
    .workNode {
     margin-top: 20vh;
    }
-
-   .aboutMe__main {
-    @include desktop2col;
-    .column {
-        width: 45%;
-        padding-top: 25vh;
-    }
-    h1 {
-        margin-top: 10vh;
-    }
-   }
-
 }
 
 
-@media (max-width: 768px) {
-    .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
-        display: none;
-    }
 
-   
+@media (min-width:1300px) {
+    .aboutMe__main {
+        @include desktop2col;
+        .column {
+            width: 45%;
+            padding-top: 15vh;
+        }
+        h1 {
+            margin-top: 5vh;
+        }
+        img {
+           height: 540px;
+            width: fit-content;
+                }
+            
+        }
+       
+       .contact__main {
+        @include desktop2col;
+        .column {
+            width: 45%;
+            padding-top: 15vh;
+        }
+        h1, form {
+            margin-top: 5vh;
+        }
+    }
 }
+
+
+

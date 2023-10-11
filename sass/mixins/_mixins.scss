@@ -8,7 +8,8 @@
 
 @mixin button {
     padding: 10px;
-    color: $darkGray;
+    background-color: black;
+    color: white;
     margin: 10px;
 }
 
@@ -19,11 +20,12 @@
 }
 
  @mixin desktop2col {
-    width: 80vw;
+    width: 70vw;
     margin: auto;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 1vw;
+    justify-content: center;
 }
 
 @mixin gallery-2col-2row {
