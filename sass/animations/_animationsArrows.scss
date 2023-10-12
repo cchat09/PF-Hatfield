@@ -1,0 +1,34 @@
+@media (min-width:768px) {
+    .work__main {
+        img:hover {
+            transform: scale(1.3);
+        } 
+    }
+
+    .header__logo:hover {
+        transform: skew(-5deg);
+    }
+}
+
+img {
+    transition: .5s;
+}
+
+.scrollArrow {
+    animation-name: scrollAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+
+    }
+    50% {
+        transform: scale(1.1);
+        fill: $DarkPurple;
+    }
+    100% {
+
+    }
+}

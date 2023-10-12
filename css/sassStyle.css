@@ -23,6 +23,13 @@ main :any-link {
   font-weight: bold;
 }
 
+.writing__nav {
+  font-size: small;
+}
+.writing__nav li {
+  margin-bottom: 15px;
+}
+
 #galleryIe, #gallerySeat {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -161,12 +168,9 @@ form {
 
 .formContainer label, .formContainer input, .formContainer textarea {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
-.formGroup {
-  margin-bottom: 20px;
-}
 .formGroup label {
   margin-bottom: 12px;
 }
@@ -193,7 +197,7 @@ form {
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 article {
@@ -234,7 +238,7 @@ article {
   margin-bottom: 50vh;
 }
 
-.sixWordBackground {
+.sixWordForeground {
   background-color: white;
   width: 100vw;
   height: 40vh;
@@ -242,13 +246,12 @@ article {
   z-index: 1;
 }
 
-.sixWordBackgroundTop {
+.sixWordForegroundTop {
   top: 0;
 }
 
-.sixWordBackgroundBottom {
+.sixWordForegroundBottom {
   bottom: 0;
-  height: 40vh;
 }
 
 .flashFiction__main p {
@@ -258,6 +261,15 @@ article {
   right: 0;
   text-align: center;
   top: 30vh;
+}
+
+.flashFiction__main .scrollArrow {
+  position: fixed;
+  bottom: 15vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
 }
 
 footer {
@@ -290,7 +302,13 @@ main {
 }
 
 .work__intro {
-  padding: 40vh 4% 30vh 4%;
+  padding: 40vh 4% 15vh 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work__intro h1 {
+  margin-bottom: 15vh;
 }
 
 .workNode {
@@ -323,10 +341,6 @@ img, video, iframe, .gallery {
 
 .writing__main h1 {
   margin-top: 10vh;
-}
-
-.flashFiction__main p {
-  text-align: center;
 }
 
 header {
@@ -483,6 +497,31 @@ p {
 h3, .work__intro h1 {
   font-family: "Montserrat";
   font-size: x-large;
+}
+
+@media (min-width: 768px) {
+  .work__main img:hover {
+    transform: scale(1.3);
+  }
+  .header__logo:hover {
+    transform: skew(-5deg);
+  }
+}
+img {
+  transition: 0.5s;
+}
+
+.scrollArrow {
+  animation-name: scrollAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollAnimation {
+  50% {
+    transform: scale(1.1);
+    fill: #5b2571;
+  }
 }
 
 /*# sourceMappingURL=sassStyle.css.map */

@@ -14,7 +14,7 @@
     margin-bottom: 50vh;
  }
 
- .sixWordBackground {
+ .sixWordForeground {
     background-color: white;
     width: 100vw;
     height: 40vh;
@@ -22,13 +22,13 @@
     z-index: 1;
  }
 
-.sixWordBackgroundTop {
+.sixWordForegroundTop {
     top:0;
 }
 
-.sixWordBackgroundBottom {
+.sixWordForegroundBottom {
     bottom:0;
-    height: 40vh;
+    
 }
 
 .flashFiction__main {
@@ -41,4 +41,13 @@
         top: 30vh;
     }
    
+}
+
+.flashFiction__main .scrollArrow {
+    position: fixed;
+    bottom: 15vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
 }

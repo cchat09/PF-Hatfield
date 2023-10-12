@@ -12,7 +12,13 @@ main {
 }
 
 .work__intro {
-    padding: 40vh 4% 30vh 4%;
+    padding: 40vh 4% 15vh 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        margin-bottom: 15vh;
+    }
 }
 
 .workNode {
@@ -51,8 +57,3 @@ img, video, iframe, .gallery {
     }
 }
 
-.flashFiction__main {
-    p {
-        text-align: center;
-    }
-}
