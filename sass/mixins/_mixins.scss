@@ -17,6 +17,7 @@
 @mixin desktop1col {
     width: 45vw;
     margin: auto;
+    display: block;
 }
 
  @mixin desktop2col {
@@ -26,6 +27,7 @@
     flex-direction: row;
     gap: 1vw;
     justify-content: center;
+    align-items: center;
 }
 
 @mixin gallery-2col-2row {
@@ -33,6 +35,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
+    align-items: center;
+    justify-items: center;
 }
 
 @mixin gallery-3col-1row {

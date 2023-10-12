@@ -35,6 +35,8 @@ main :any-link {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
+  align-items: center;
+  justify-items: center;
 }
 
 #gallerySeat {
@@ -58,6 +60,8 @@ main :any-link {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 20px;
+  align-items: center;
+  justify-items: center;
   grid-template-areas: "ohMyDogPic1 ohMyDogPic1" "ohMyDogPic2 ohMyDogPic3";
 }
 
@@ -166,11 +170,6 @@ form {
   justify-content: center;
 }
 
-.formContainer label, .formContainer input, .formContainer textarea {
-  display: block;
-  margin-bottom: 5px;
-}
-
 .formGroup label {
   margin-bottom: 12px;
 }
@@ -180,7 +179,11 @@ form {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
+  .formContainer label, .formContainer input, .formContainer textarea {
+    display: block;
+    margin-bottom: 5px;
+  }
   textarea {
     width: 90%;
   }
@@ -191,7 +194,7 @@ form {
     margin: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
   .desktopRowContainer {
     display: flex;
     flex-direction: row;
@@ -299,6 +302,7 @@ footer i {
 main {
   width: 100vw;
   height: auto;
+  margin-bottom: 7vh;
 }
 
 .work__intro {
@@ -341,6 +345,13 @@ img, video, iframe, .gallery {
 
 .writing__main h1 {
   margin-top: 10vh;
+}
+
+.aboutMe__main img {
+  height: 350px;
+  width: auto;
+  border-radius: 50%;
+  margin-top: 20%;
 }
 
 header {
@@ -415,6 +426,7 @@ header .currentPage {
   .work__main, .aboutMe__main, .contact__main, .writing__main {
     width: 45vw;
     margin: auto;
+    display: block;
   }
   .gallery {
     gap: 20px;
@@ -425,6 +437,10 @@ header .currentPage {
   .writing__main h1 {
     margin-top: 20vh;
   }
+  .aboutMe__main .column {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (min-width: 1300px) {
   .aboutMe__main {
@@ -434,6 +450,7 @@ header .currentPage {
     flex-direction: row;
     gap: 1vw;
     justify-content: center;
+    align-items: center;
   }
   .aboutMe__main .column {
     width: 45%;
@@ -442,10 +459,6 @@ header .currentPage {
   .aboutMe__main h1 {
     margin-top: 5vh;
   }
-  .aboutMe__main img {
-    height: 540px;
-    width: fit-content;
-  }
   .contact__main {
     width: 70vw;
     margin: auto;
@@ -453,6 +466,7 @@ header .currentPage {
     flex-direction: row;
     gap: 1vw;
     justify-content: center;
+    align-items: center;
   }
   .contact__main .column {
     width: 45%;
@@ -519,7 +533,7 @@ img {
 
 @keyframes scrollAnimation {
   50% {
-    transform: scale(1.1);
+    transform: scale(1.3);
     fill: #5b2571;
   }
 }
