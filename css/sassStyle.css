@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* fast format to set up basic desktop structure with one column of content */
+/* fast format to set up basic desktop structure with two columns of content */
+/* mixins for building image / video galleries */
+/* Formatting for links + buttons */
 :any-link {
   text-decoration: none;
   color: black;
@@ -14,6 +19,7 @@ main :any-link {
   margin: 10px;
 }
 
+/* Formatting for internal navigation, only on select pages and only desktop-view */
 .internalNav {
   position: fixed;
   right: 2%;
@@ -30,6 +36,7 @@ main :any-link {
   margin-bottom: 15px;
 }
 
+/* Gallery-specific formatting - including assigning grid area */
 #galleryIe, #gallerySeat {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -110,6 +117,7 @@ main :any-link {
   grid-area: myself5;
 }
 
+/* Cust∫om spacer elements that can be used to add space/padding between elements when needed */
 .spacer-1 {
   width: 100%;
   margin-bottom: 10%;
@@ -160,6 +168,7 @@ main :any-link {
   margin-bottom: 100%;
 }
 
+/* Form formatting. Some responsive code is included here that is form specific */
 form {
   margin: auto;
   text-align: center;
@@ -203,6 +212,7 @@ form {
     margin-bottom: 10px;
   }
 }
+/* Artcile formatting including mobile-view overflow-scroll */
 article {
   white-space: pre-wrap;
   font-family: "Times New Roman", Times, serif;
@@ -225,12 +235,15 @@ article {
   margin: auto;
 }
 
+/* All formatting necessary to acheive the hidden-scroll effect on the flashFiction page, showing six word stories */
 #carousel-1 .item {
   padding: 100px 1em;
 }
 
 .sixWordStory {
   margin-bottom: 20vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .firstStory {
@@ -277,7 +290,6 @@ article {
 
 footer {
   background-color: black;
-  /*background-color: rgba(245, 245, 245, 0.832); */
   position: fixed;
   bottom: 0;
   width: 100vw;
@@ -293,6 +305,7 @@ footer i {
   margin-right: 20px;
 }
 
+/* General layout formatting */
 * {
   padding: 0;
   margin: 0;
@@ -305,6 +318,18 @@ main {
   margin-bottom: 7vh;
 }
 
+img, video, iframe, .gallery {
+  width: 100%;
+  height: auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.gallery img, video {
+  margin-bottom: 5px;
+}
+
+/* main index formatting */
 .work__intro {
   padding: 40vh 4% 15vh 4%;
   display: flex;
@@ -325,17 +350,7 @@ main {
   padding: 10px;
 }
 
-img, video, iframe, .gallery {
-  width: 100%;
-  height: auto;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.gallery img, video {
-  margin-bottom: 5px;
-}
-
+/* contact page formatting */
 .contact__main .contactIntro {
   margin: 10vh 2% auto 2%;
 }
@@ -343,10 +358,12 @@ img, video, iframe, .gallery {
   width: auto;
 }
 
+/* writing page formatting */
 .writing__main h1 {
   margin-top: 10vh;
 }
 
+/* aboutMe page formatting */
 .aboutMe__main img {
   height: 350px;
   width: auto;
@@ -407,6 +424,8 @@ header .currentPage {
   font-size: 1.1em;
 }
 
+/* formatting to allow responsive layout */
+/* mobile-view specific formatting */
 @media (max-width: 768px) {
   .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #gallerySeat, #galleryMyself {
     display: none;
@@ -419,6 +438,7 @@ header .currentPage {
     height: auto;
   }
 }
+/* medium-viewport specific formatting */
 @media (min-width: 768px) {
   .navbar, .carousel {
     display: none;
@@ -442,6 +462,7 @@ header .currentPage {
     justify-content: center;
   }
 }
+/* large-viewport specific formatting */
 @media (min-width: 1300px) {
   .aboutMe__main {
     width: 70vw;
@@ -470,12 +491,13 @@ header .currentPage {
   }
   .contact__main .column {
     width: 45%;
-    padding-top: 15vh;
+    padding-top: 20vh;
   }
   .contact__main h1, .contact__main form {
     margin-top: 5vh;
   }
 }
+/* text specific formatting - some link-specific formatting can be found in the header section */
 p, h1, h2, h3 {
   white-space: pre-wrap;
 }
@@ -513,6 +535,7 @@ h3, .work__intro h1 {
   font-size: x-large;
 }
 
+/* simple image + logo animations, and pulsing arrow icon to invite user to scroll*/
 @media (min-width: 768px) {
   .work__main img:hover {
     transform: scale(1.3);

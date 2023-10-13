@@ -13,13 +13,14 @@
     margin: 10px;
 }
 
-
+/* fast format to set up basic desktop structure with one column of content */
 @mixin desktop1col {
     width: 45vw;
     margin: auto;
     display: block;
 }
 
+/* fast format to set up basic desktop structure with two columns of content */
  @mixin desktop2col {
     width: 70vw;
     margin: auto;
@@ -30,6 +31,8 @@
     align-items: center;
 }
 
+
+/* mixins for building image / video galleries */
 @mixin gallery-2col-2row {
     display: grid;
     grid-template-columns: 1fr 1fr;

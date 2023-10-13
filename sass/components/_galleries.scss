@@ -1,7 +1,8 @@
+/* Gallery-specific formatting - including assigning grid area */
+
 #galleryIe {
     @include gallery-2col-2row;
 }
-
 
 
 
@@ -24,7 +25,6 @@
 #seatPic3 {
     grid-area: seatPic3;
 }
-
 
 
 

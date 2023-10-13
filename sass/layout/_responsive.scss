@@ -1,3 +1,6 @@
+/* formatting to allow responsive layout */
+
+/* mobile-view specific formatting */
 @media (max-width: 768px) {
     .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
         display: none;
@@ -14,7 +17,7 @@
    
 }
 
-
+/* medium-viewport specific formatting */
 @media (min-width: 768px) {
     
     .navbar, .carousel {
@@ -45,7 +48,7 @@
 }
 
 
-
+/* large-viewport specific formatting */
 @media (min-width:1300px) {
     .aboutMe__main {
         @include desktop2col;
@@ -63,7 +66,7 @@
         @include desktop2col;
         .column {
             width: 45%;
-            padding-top: 15vh;
+            padding-top: 20vh;
         }
         h1, form {
             margin-top: 5vh;
