@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* fast format to set up basic desktop structure with one column of content */
 /* fast format to set up basic desktop structure with two columns of content */
 /* mixins for building image / video galleries */
@@ -117,7 +116,7 @@ main :any-link {
   grid-area: myself5;
 }
 
-/* Cust∫om spacer elements that can be used to add space/padding between elements when needed */
+/* Custom spacer elements that can be used to add space/padding between elements when needed */
 .spacer-1 {
   width: 100%;
   margin-bottom: 10%;
@@ -371,6 +370,22 @@ img, video, iframe, .gallery {
   margin-top: 20%;
 }
 
+/* spot page spacing/layout corrections */
+.aboutMe__main, .contact__main {
+  margin-bottom: 10vh;
+}
+
+/*404 basic styling*/
+.missingPage__main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -447,6 +462,7 @@ header .currentPage {
     width: 45vw;
     margin: auto;
     display: block;
+    margin-bottom: 10vh;
   }
   .gallery {
     gap: 20px;
@@ -464,7 +480,7 @@ header .currentPage {
 }
 /* large-viewport specific formatting */
 @media (min-width: 1300px) {
-  .aboutMe__main {
+  .aboutMe__main, .contact__main {
     width: 70vw;
     margin: auto;
     display: flex;
@@ -473,28 +489,10 @@ header .currentPage {
     justify-content: center;
     align-items: center;
   }
-  .aboutMe__main .column {
-    width: 45%;
+  .aboutMe__main .column, .contact__main .column {
+    margin-bottom: 2vh;
     padding-top: 15vh;
-  }
-  .aboutMe__main h1 {
-    margin-top: 5vh;
-  }
-  .contact__main {
-    width: 70vw;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    justify-content: center;
-    align-items: center;
-  }
-  .contact__main .column {
     width: 45%;
-    padding-top: 20vh;
-  }
-  .contact__main h1, .contact__main form {
-    margin-top: 5vh;
   }
 }
 /* text specific formatting - some link-specific formatting can be found in the header section */

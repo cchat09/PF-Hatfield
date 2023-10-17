@@ -50,27 +50,8 @@
 
 /* large-viewport specific formatting */
 @media (min-width:1300px) {
-    .aboutMe__main {
+    .aboutMe__main, .contact__main {
         @include desktop2col;
-        .column {
-            width: 45%;
-            padding-top: 15vh;
-        }
-        h1 {
-            margin-top: 5vh;
-        }
-        }
-    
-       
-       .contact__main {
-        @include desktop2col;
-        .column {
-            width: 45%;
-            padding-top: 20vh;
-        }
-        h1, form {
-            margin-top: 5vh;
-        }
     }
 }
 

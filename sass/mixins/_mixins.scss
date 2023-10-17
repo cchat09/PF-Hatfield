@@ -18,6 +18,7 @@
     width: 45vw;
     margin: auto;
     display: block;
+    margin-bottom: 10vh;
 }
 
 /* fast format to set up basic desktop structure with two columns of content */
@@ -29,6 +30,12 @@
     gap: 1vw;
     justify-content: center;
     align-items: center;
+    .column {
+        margin-bottom: 2vh;
+        padding-top: 15vh;
+        width: 45%;
+    }
+    
 }
 
 

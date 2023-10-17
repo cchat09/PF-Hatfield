@@ -76,3 +76,19 @@ img, video, iframe, .gallery {
     }  
 }
 
+
+/* spot page spacing/layout corrections */
+.aboutMe__main, .contact__main {
+    margin-bottom: 10vh;
+} 
+
+/*404 basic styling*/
+.missingPage__main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
