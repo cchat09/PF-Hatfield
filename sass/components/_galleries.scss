@@ -7,7 +7,7 @@
 
 
 #gallerySeat {
-    @extend #galleryIe;
+    @include gallery-2col-2row;
     grid-template-areas: 
     "seatPic1 seatPic1"
     "seatPic2 seatPic3"

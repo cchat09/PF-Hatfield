@@ -36,7 +36,7 @@ main :any-link {
 }
 
 /* Gallery-specific formatting - including assigning grid area */
-#galleryIe, #gallerySeat {
+#galleryIe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -46,6 +46,12 @@ main :any-link {
 }
 
 #gallerySeat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
   grid-template-areas: "seatPic1 seatPic1" "seatPic2 seatPic3";
 }
 
@@ -442,7 +448,7 @@ header .currentPage {
 /* formatting to allow responsive layout */
 /* mobile-view specific formatting */
 @media (max-width: 768px) {
-  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #gallerySeat, #galleryMyself {
+  .headerDesktopContainer, .internalNav, #galleryOhMyDog, #galleryIe, #galleryMyself {
     display: none;
   }
   .aboutMe__main {
@@ -451,6 +457,9 @@ header .currentPage {
   .aboutMe__main img {
     width: 100vw;
     height: auto;
+  }
+  #gallerySeat {
+    display: block;
   }
 }
 /* medium-viewport specific formatting */
