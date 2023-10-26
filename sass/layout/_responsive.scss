@@ -57,6 +57,10 @@
     .aboutMe__main, .contact__main {
         @include desktop2col;
     }
+
+    .aboutMe__main img {
+        margin-top: 0;
+    }
 }
 
 

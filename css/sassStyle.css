@@ -499,9 +499,12 @@ header .currentPage {
     align-items: center;
   }
   .aboutMe__main .column, .contact__main .column {
-    margin-bottom: 2vh;
+    margin-bottom: 7vh;
     padding-top: 15vh;
     width: 45%;
+  }
+  .aboutMe__main img {
+    margin-top: 0;
   }
 }
 /* text specific formatting - some link-specific formatting can be found in the header section */
