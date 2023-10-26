@@ -309,6 +309,9 @@ footer i {
   margin-left: 20px;
   margin-right: 20px;
 }
+footer i:hover {
+  font-weight: bolder;
+}
 
 /* General layout formatting */
 * {
@@ -468,7 +471,7 @@ header .currentPage {
     display: none;
   }
   .work__main, .aboutMe__main, .contact__main, .writing__main {
-    width: 45vw;
+    width: 50vw;
     margin: auto;
     display: block;
     margin-bottom: 10vh;
